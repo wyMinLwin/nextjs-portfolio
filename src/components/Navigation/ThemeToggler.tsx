@@ -13,7 +13,7 @@ const ThemeToggler = () => {
         return null;
     }
     window.addEventListener('unload',() => {
-        setTheme('dark')
+        setTheme('light')
     });
   return (
     <div className='my-auto z-20'>

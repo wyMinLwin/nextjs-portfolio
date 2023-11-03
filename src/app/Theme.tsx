@@ -7,7 +7,7 @@ const Theme = ({
     children: React.ReactNode
 }) => {
   return (
-    <ThemeProvider defaultTheme='dark' attribute="class">
+    <ThemeProvider defaultTheme='light' attribute="class">
         {children}
     </ThemeProvider>
   )
