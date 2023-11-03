@@ -11,14 +11,14 @@ const inconsolata = Inconsolata({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="en" className={`${inconsolata.className} dark`}  style={{colorScheme:'dark'}}>
       <head>
       </head>
-        <body className='square-bg'>
+        <body className='square-bg overflow-hidden'>
           <Theme>
             <Header />  
             {children}  

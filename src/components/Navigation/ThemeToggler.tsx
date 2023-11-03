@@ -12,9 +12,11 @@ const ThemeToggler = () => {
     if (!mounted) {
         return null;
     }
-
+    window.addEventListener('unload',() => {
+        setTheme('dark')
+    });
   return (
-    <div className='my-auto'>
+    <div className='my-auto z-20'>
         <button value={theme} onClick={() => setTheme('light')} className='hidden dark:inline px-2.5 py-1.5 rounded-3xl backdrop-blur-lg border drop-shadow click-effect'>
             <Image priority src={'/images/moon.svg'} alt='moon svg' height={24} width={24} />
         </button>
