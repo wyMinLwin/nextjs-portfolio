@@ -2,6 +2,8 @@ import React from 'react'
 import { Karla } from 'next/font/google'
 import { Metadata } from 'next'
 import Socials from '@/components/Socials';
+import Link from 'next/link';
+import MoreArrow from '@/components/MoreArrow';
 const karla = Karla({ subsets: ['latin'] });
 const experiences = [
     {
@@ -32,8 +34,8 @@ const experiences = [
 ];
 export const metadata: Metadata = {
     title: 'About Me | Wai Yan Min Lwin',
-    description: 'Wai Yan Min Lwin - Software Engineer',
-    keywords: ["InnoScript Myanmar","Thetys Myanmar"]
+    description: 'Wai Yan Min Lwin - I am a Software Engineer from Yangon, Myanmar.',
+    keywords: ["InnoScript Myanmar","Thetys Myanmar","Wai Yan Min Lwin","Wai Yan","Min Lwin",],
   }
 export default function About() {
   return (
@@ -69,6 +71,9 @@ export default function About() {
                 }
             </ul>
         </div>
+        <Link href={'/projects'} className='flex items-center text-lg'>
+            Checkout my projects <MoreArrow />
+        </Link>
         <Socials />
     </section>
   )

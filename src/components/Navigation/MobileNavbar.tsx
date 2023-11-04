@@ -36,15 +36,15 @@ export default function App() {
     <>
       <Image onClick={() => toggleOpen()} src={'/images/hamburger.svg'} className="ml-auto sm:hidden relative z-50 click-effect" width={40} height={40} alt='hamberger meu' />
       <motion.nav
-        className="w-screen h-screen fixed top-0 right-0 dark:bg-black bg-white"
+        className="w-screen h-screen absolute top-0 right-0 dark:bg-black bg-white z-40"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={sideBar}
       >
-        <div className="relative w-full h-full z-50 flex flex-col justify-center items-center gap-y-3">
+        <div className="relative w-full h-full z-30 flex flex-col justify-center items-center gap-y-3">
           {
             paths.map(path => (
-              <Link href={path} className='' key={path}>
+              <Link href={path} onClick={() => toggleOpen()} key={path}>
                 <span className='underline-effect text-lg before:bg-black dark:before:bg-white capitalize'>{path}</span>
               </Link>))
           }

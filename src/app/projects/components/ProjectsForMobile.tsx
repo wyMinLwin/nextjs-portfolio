@@ -23,7 +23,7 @@ const ProjectsForMobile = ({projects}:{projects:ProjectsForMobilePropsTypes}) =>
                   <div className='flex flex-wrap gap-2'>
                     {
                       project.tools.map(tool => (
-                        <span className='bg-white px-1.5 rounded-lg' key={tool}>{tool}</span>
+                        <span className='px-1.5 text-white rounded-lg' style={{background:'#c0c0c0c0'}} key={tool}>{tool}</span>
                       ))
                     }
                   </div>

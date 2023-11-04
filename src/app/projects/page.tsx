@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import ProjectsForMobile from './components/ProjectsForMobile'
 import ProjectsForDesktop from './components/ProjectsForDesktop'
 import Socials from '@/components/Socials'
+import Link from 'next/link'
+import MoreArrow from '@/components/MoreArrow'
 const karla = Karla({ subsets: ['latin'] })
 
 let projects = [
@@ -31,7 +33,14 @@ let projects = [
       image: 'SvelteFriend.png',
       tools: ["SvelteKit","TypeScript","Tailwind","PNPM"]
   },
-  
+  {
+    title: "Portfolio v3",
+    desc: "",
+    demo: "https://waiyanminlwin-v3.vercel.app",
+    github: "https://github.com/wyMinLwin/svelte-portfolio",
+    image: 'V3.png',
+    tools: ["SvelteKit","TypeScript","Tailwind","Vite"]
+},
   {
       title: "React Terminal",
       desc: "The idea of developing this app is really personal cause I really like to use terminal and CLI. I build the project with Vite As a first I started working on layout to get a clean layout. Since there was one page It was easy to create a layout. I used Redux Toolkit to store the history of command and write a bunch of straight forward JavaScirpt method to give a response to user. The major problem I faced with this projects are getting the history with the key storke and try to display that on the screen and think about how should the command typing work without using the HTML built-in Input tag.",
@@ -64,19 +73,12 @@ let projects = [
       image: 'Portfolio.png',
       tools: ["React","Bootstrap"]
   },
-  {
-      title: "Portfolio v2",
-      desc: "The inspiration of this portfolio came from Dribble. I was about to help my friend to create a portfolio and suddenly I saw the layout like apple watch's UI and I thought what if I implement that kind of layout to portfolio with pop-up. And then I figured it out this is the result. ",
-      demo: "https://wyminlwin-ts.netlify.app/",
-      github: "https://github.com/wyMinLwin/typescript-portfolio",
-      image: 'ReactTS.png',
-      tools: ["React","TypeScript","Tailwind","Vite"]
-  },
+  
 ]
 
 export const metadata: Metadata = {
   title: 'Projects | Wai Yan Min Lwin',
-  description: 'Wai Yan Min Lwin - Software Engineer',
+  description: 'Wai Yan Min Lwin - I have done various types of interesting projects and I am willing to contribute in open-source projects.',
   keywords: ["Wai Yan","Min Lwin", "Wai Yan Min Lwin","Projects"]
 }
 
@@ -86,6 +88,9 @@ const Projects = () => {
         <h1 className={karla.className + ' text-2xl sm:text-3xl md:text-5xl font-bold'}>Projects.</h1>
         <ProjectsForMobile projects={projects} />
         <ProjectsForDesktop projects={projects} />
+        <Link href={'/contact'} className='flex items-center text-lg'>
+             Contact me through here <MoreArrow />
+        </Link>
         <Socials />
     </section>
   )

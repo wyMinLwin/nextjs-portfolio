@@ -109,7 +109,7 @@
     width: 1px;
     top: 4px;
     height: 100%;
-    z-index: 400;
+    z-index: 35;
     box-sizing: border-box;
 }
 
@@ -122,10 +122,43 @@
   width: 15px;
   height: 15px;
   margin-top: 3px;
-  z-index: 400;
+  z-index: 35;
   box-sizing: border-box;
 }
 
 .project-overlay {
   background:linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
+}
+
+.progress-bar {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.circle {
+  height: 100%;
+  right: 0px;
+  position: absolute;
+  border: solid 2px  #c0c0c0;
+  border-top-color:  #fff;
+  border-radius: 50%;
+}
+
+.rotate-circle {
+  width: 100%;
+  transform: rotate(135deg);  
+  animation: spin 1.3s steps(2) .2s infinite;
+  -webkit-animation: spin 1.3s linear infinite;
+
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

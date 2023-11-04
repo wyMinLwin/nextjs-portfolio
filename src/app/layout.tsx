@@ -12,12 +12,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inconsolata.className} light`}  style={{colorScheme:'light'}}>
-      <head>
-      </head>
-        <body className='square-bg min-w-screen min-h-screen flex flex-col'>
+      <body>
           <Theme>
-            <Header />  
-            {children} 
+            <main className='square-bg w-screen h-screen overflow-x-hidden overflow-y-scroll'>
+              <Header />  
+              {children} 
+            </main>
           </Theme>
         </body>
     </html>
