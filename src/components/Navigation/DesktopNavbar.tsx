@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useMemo } from 'react'
 import ThemeToggler from './ThemeToggler'
-const paths = ['about','project','contact']
+const paths = ['about','projects','contact']
 
 const DesktopNavbar = () => {
   const pathName = usePathname();

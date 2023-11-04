@@ -28,7 +28,7 @@ const sideBar  = {
     }
   }
 }
-const paths = ['about','project','contact']
+const paths = ['about','projects','contact']
 
 export default function App() {
   const [isOpen, toggleOpen] = useCycle(false, true);

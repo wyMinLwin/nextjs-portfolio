@@ -126,4 +126,6 @@
   box-sizing: border-box;
 }
 
-
+.project-overlay {
+  background:linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
+}
