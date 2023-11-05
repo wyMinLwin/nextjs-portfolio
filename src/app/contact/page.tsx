@@ -10,8 +10,8 @@ const karla = Karla({ subsets: ['latin']});
 
 export const metadata: Metadata = {
     title: "Contact Me | Wai Yan Min Lwin",
-    description: 'Wai Yan Min Lwin - You can contact me through a lot of major social platforms.',
-    keywords: ["waiyanminlwin421@gmail.com","Wai Yan Min Lwin Contact"]
+    description: 'You can contact me through a lot of major social platforms.',
+    keywords: ["waiyanminlwin421@gmail.com","Wai Yan Min Lwin Contact","Wai Yan Min Lwin"]
 
 }
 export default function Contact() {

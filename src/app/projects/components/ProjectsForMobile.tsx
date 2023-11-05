@@ -16,7 +16,7 @@ const ProjectsForMobile = ({projects}:{projects:ProjectsForMobilePropsTypes}) =>
         projects.map(project => (
           <Link href={project.demo} key={project.github}>
             <div className='col-span-1 relative rounded-lg overflow-hidden hover:drop-shadow-lg'>
-              <Image src={'/images/'+project.image} alt={project.title} width={2880} height={1628}  className='w-full'/>
+              <Image priority src={'/images/'+project.image} alt={project.title} width={2880} height={1628}  className='w-full'/>
               <article className='h-full w-full px-3.5 absolute rounded-lg project-overlay bottom-0 left-0 right-0 flex flex-col justify-end py-3'>
                 
                   <h2 className='text-white text-lg'>{project.title}</h2>

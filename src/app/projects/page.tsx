@@ -78,14 +78,15 @@ let projects = [
 
 export const metadata: Metadata = {
   title: 'Projects | Wai Yan Min Lwin',
-  description: 'Wai Yan Min Lwin - I have done various types of interesting projects and I am willing to contribute in open-source projects.',
-  keywords: ["Wai Yan","Min Lwin", "Wai Yan Min Lwin","Projects"]
+  description: 'I have done various types of interesting projects and I am willing to contribute in open-source projects.',
+  keywords: ["Wai Yan","Min Lwin", "Wai Yan Min Lwin","Projects","Software Engineer"]
 }
 
 const Projects = () => {
   return (
-    <section className='h-full px-3 sm:px-6 md:px-10 lg:px-60 py-2 md:py-2 flex flex-col justify-start gap-y-6 md:gap-y-8 lg:gap-y-20'>
+    <section className='h-full px-3 sm:px-6 md:px-10 lg:px-60 py-2 md:py-2 flex flex-col justify-start gap-y-6 md:gap-y-8 lg:gap-y-14'>
         <h1 className={karla.className + ' text-2xl sm:text-3xl md:text-5xl font-bold'}>Projects.</h1>
+        <p>I have done various type of projects which is really interesting. I am also willing to contribute in open source projects.</p>
         <ProjectsForMobile projects={projects} />
         <ProjectsForDesktop projects={projects} />
         <Link href={'/contact'} className='flex items-center text-lg'>

@@ -6,8 +6,9 @@ import { Metadata } from 'next'
 import MoreArrow from '@/components/MoreArrow'
 const karla = Karla({ subsets: ['latin'] })
 export const metadata: Metadata = {
-  title: 'Wai Yan Min Lwin',
-  description: 'Wai Yan Min Lwin - Software Engineer',
+  title: 'Software Engineer | Wai Yan Min Lwin',
+  description: 'I am Wai Yan Min Lwin. I currectly build accessible and maintainable products for the web.',
+  keywords: ["Wai Yan Min Lwin","Wai Yan","Min Lwin","Software Engineer"],
 }
 export default function Home() {
   return (

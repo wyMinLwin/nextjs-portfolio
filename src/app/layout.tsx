@@ -2,8 +2,15 @@ import Header from '@/components/Header'
 import './globals.css'
 import { Inconsolata } from 'next/font/google'
 import Theme from './Theme'
+import { Metadata } from 'next'
 
 const inconsolata = Inconsolata({ subsets: ['latin'] })
+
+export const metadata: Metadata= {
+  title: "Wai Yan Min Lwin",
+  description: "A Software Engineer who interested in open-source projects.",
+  keywords: ["Wai Yan Min Lwin","Wai Yan","Min Lwin","Software Engineer"],  
+}
 
 export default function RootLayout({
   children,

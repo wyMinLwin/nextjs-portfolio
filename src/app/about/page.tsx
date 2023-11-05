@@ -34,7 +34,7 @@ const experiences = [
 ];
 export const metadata: Metadata = {
     title: 'About Me | Wai Yan Min Lwin',
-    description: 'Wai Yan Min Lwin - I am a Software Engineer from Yangon, Myanmar.',
+    description: 'I am a 20 years old Software Engineer from Yangon, Myanmar.',
     keywords: ["InnoScript Myanmar","Thetys Myanmar","Wai Yan Min Lwin","Wai Yan","Min Lwin",],
   }
 export default function About() {

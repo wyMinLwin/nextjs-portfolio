@@ -17,7 +17,7 @@ const ProjectsForDesktop = ({projects}:{projects:ProjectsForDesktopPropsTypes}) 
         projects.map(project => (
           <Link href={project.demo} key={project.github}>
             <div className='col-span-1 relative rounded-lg overflow-hidden hover:drop-shadow-lg'>
-              <Image src={'/images/'+project.image} alt={project.title} width={2880} height={1628}  className='w-full'/>
+              <Image priority src={'/images/'+project.image} alt={project.title} width={2880} height={1628}  className='w-full'/>
               <ProjectOverlayDesktop project={project} />
             </div>
           </Link>

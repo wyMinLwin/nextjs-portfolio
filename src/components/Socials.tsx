@@ -21,7 +21,7 @@ const socials = [
 const Socials = () => {
 
   return (
-    <div className='flex gap-x-10 items-center'>
+    <div className='flex gap-x-10 py-2 items-center'>
         {
             socials.map(social => (
                 <Image key={social.url} priority src={'/images/'+social.img} alt={social.url} width={20} height={20} />
