@@ -40,6 +40,7 @@ export default function App() {
         initial={false}
         animate={isOpen ? "open" : "closed"}
         variants={sideBar}
+        transition={{duration:3}}
       >
         <div className="relative w-full h-full z-30 flex flex-col justify-center items-center gap-y-3">
           {
